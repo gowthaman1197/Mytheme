@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body> 
+    <header></header> 
+    <!-- Navigation starts here -->
+    <div id="nav">
+      <div class="navbar navbar-default navbar-static wrap">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="logo.png" alt="Jack Software Logo"></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="./services/webdevelopment.html">Web Development</a></li>
+                  <li><a href="./services/webdesign.html">Web Designing</a></li>
+                  <li><a href="./services/mobiledevelopment.html">Mobile Development</a></li>
+                  <li><a href="./services/digitialmarketing.html">Digital Marketing</a></li>
+                  <li><a href="./services/webhosting.html">Web Hosting</a></li>
+                </ul>
+              </li>            
+              <li><a href="team.html">Our team</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>          
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation ends here --> 
+    <div class="content-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="inner-content">
+              <h1>Contact us anytime, anywhere.</h1>
+              <div class="lines-up"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">        
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <div class="inner-content">
+            <h4>Our Location</h4>
+            <div class="lines-up"></div>
+          </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+          <div class="inner-content">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>        
+    </div>
+    <div class="content-area">
+      <div class="container">        
+        <div class="row">          
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <div class="inner-content">
+                  <h4>Let's talk!</h4>
+                  <div class="lines-up"></div>
+                </div>
+              </div>
+            </div>
+            <div class="inner-content">
+              <form id="contact-form" method="post" action="contact.php" role="form">
+                <div class="messages"></div>
+                <div class="controls">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="form_name">Firstname *</label>
+                        <input id="form_name" type="text" name="name" class="form-control texton" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="form_lastname">Lastname *</label>
+                        <input id="form_lastname" type="text" name="surname" class="form-control texton" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="form_email">Email *</label>
+                        <input id="form_email" type="email" name="email" class="form-control texton" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="form_phone">Phone</label>
+                        <input id="form_phone" type="tel" name="phone" class="form-control texton" placeholder="Please enter your phone">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="form_message">Message *</label>
+                        <textarea id="form_message" name="message" class="form-control texton" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                        <input type="submit" class="btn btn-success btn-send click" value="Send message">
+                    </div>
+                  </div>                           
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <div class="inner-content">
+                  <h4>Visit Us</h4>
+                  <div class="lines-up"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="inner-content">
+                  <span class="address">
+                    <strong><i class="fa fa-map-marker"></i> Address: </strong> Novel Business Park, #57, 13th Cross,
+                      <br> Gajendra Nagar, Anepalya Main Road,<br>           
+                      Bangalore 560030<br>
+                  </span>
+                  <br>                 
+                  <span class="address">
+                    <strong><i class="fa fa-phone"></i> Phone:</strong> 
+                    <a href="tel:0330 223 3891&#10;">  +91-8494933366</a>
+                  </span> 
+                  <br> 
+                  <span class="address">
+                    <strong><i class="fa fa-envelope"></i> Email:</strong> 
+                    <a href="mailto: info@jack-software.com&#10;">info@jack-software.com</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="scrollToTop">^</a>
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>JackSoftware Pvt Ltd.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCMpyJh4GWcIIS23gRvbQ-Vmevuii0X25E"></script>    
+    <script type="text/javascript">
+      var locations = [      
+        ['<b>Jack Software Pvt Ltd</b>, <br> Novel Business Park, <br>#57, 13th Cross, <br>Gajendra Nagar, <br>Anepalya Main Road, <br> Bangalore - 560030.', 12.951483, 77.608069, 1]
+      ];
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: new google.maps.LatLng(12.951483, 77.608069),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+      var infowindow = new google.maps.InfoWindow();
+      var marker, i;
+      for (i = 0; i < locations.length; i++) {  
+        marker = new google.maps.Marker({
+          position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+          map: map
+        });
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+          return function() {
+            infowindow.setContent(locations[i][0]);
+            infowindow.open(map, marker);
+          }
+        })(marker, i));
+      }
+      $(window).on('resize', function() {
+        var currCenter = map.getCenter();
+        google.maps.event.trigger(map, 'resize');
+        map.setCenter(currCenter);
+      });
+  </script>
+  </body>
+</html>

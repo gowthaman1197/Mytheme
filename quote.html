@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Estimate your Quote</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body> 
+    <header></header> 
+    <!-- Navigation starts here -->
+    <div id="nav">
+      <div class="navbar navbar-default navbar-static wrap">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="logo.png" alt="Jack Software Logo"></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Service <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="./services/webdevelopment.html">Web Development</a></li>
+                  <li><a href="./services/webdesign.html">Web Designing</a></li>
+                  <li><a href="./services/mobiledevelopment.html">Mobile Development</a></li>
+                  <li><a href="./services/digitialmarketing.html">Digital Marketing</a></li>
+                  <li><a href="./services/webhosting.html">Web Hosting</a></li>
+                </ul>
+              </li>            
+              <li><a href="team.html">Our team</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>          
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation ends here --> 
+    <div class="content-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="inner-content">
+              <h1>Let's Talk!</h1>
+              <div class="lines-up"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <form id="contact-form" method="post" action="contact.php" role="form">
+            <div class="messages"></div>
+            <div class="controls">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_name">Firstname *</label>
+                    <input id="form_name" type="text" name="name" class="form-control texton" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_lastname">Lastname *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control texton" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control texton" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_phone">Phone</label>
+                    <input id="form_phone" type="tel" name="phone" class="form-control texton" placeholder="Please enter your phone">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_company">Company *</label>
+                    <input id="form_company" type="company" name="company" class="form-control texton" placeholder="Please enter your company *" required="required" data-error="Valid company is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_service">What service are you looking for?</label>
+                    <select class="form-control texton" id="sel1">
+                      <option>Website</option>
+                      <option>Webdesign</option>
+                      <option>Logo</option>
+                      <option>Andorid App</option>
+                      <option>iOS App</option>
+                      <option>Digital Marketing</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control texton" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <input type="submit" class="btn btn-success btn-send click" value="Send message">
+                </div>
+              </div>                           
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="content-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="inner-content">
+              <h2>Level Of Assurances</h2>
+              <div class="lines-up"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 serviceon">
+            <div class="inner-content text-center">            
+              <i class="fa fa-lock icon-color1 service-icon"></i>
+              <h3>Safe and Secure</h3>
+              <p>Safe and Secure your idea. We entrust that we do not share your idea to anyone else.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 serviceon">
+            <div class="inner-content text-center">            
+              <i class="fa fa-handshake-o icon-color1 service-icon"></i>
+              <h3>Commitment</h3>
+              <p>We have 100% commitment with your work.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 serviceon">
+            <div class="inner-content text-center">            
+              <i class="fa fa-th-list icon-color1 service-icon"></i>
+              <h3>Implement</h3>
+              <p>Implement things as per the requirements we have got from your end.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 serviceon">
+            <div class="inner-content text-center">            
+              <i class="fa fa-life-ring icon-color1 service-icon"></i>
+              <h3>Support</h3>
+              <p>Our support is endless. We are always here to assit you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="scrollToTop">^</a>
+    <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>JackSoftware Pvt Ltd.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
